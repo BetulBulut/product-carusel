@@ -50,11 +50,11 @@
       mainContainer.appendChild(title);
       mainContainer.appendChild(carousel);
         
-      const targetElement = document.querySelector('cx-page-slot[position="Section2A"]'); // Yeni hedef seçici
+      const targetElement = document.querySelector('cx-page-slot[position="Section2A"]');
       if (targetElement) {
           targetElement.appendChild(mainContainer);
       } else {
-          document.body.appendChild(mainContainer); // Eğer hedef bulunamazsa yine en alta ekle
+          document.body.appendChild(mainContainer);
           console.log("Hedef element (cx-page-slot[position='Section2A']) bulunamadı, karusel sayfanın en altına eklendi.");
       }
     }
